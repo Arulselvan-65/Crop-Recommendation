@@ -121,7 +121,7 @@ else:
                 st.markdown(title, unsafe_allow_html=True)
                 st.write ("\n\n\n")
                 st.write ("\n\n\n")
-                st.altair_chart(bar_chart, use_container_width=True)
+                st.altair_chart(bar_chart, use_container_width=False)
 
 
                 crop_production = {}
