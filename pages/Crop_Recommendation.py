@@ -45,7 +45,7 @@ rain_val = st.text_input("Rainfall", placeholder="Eg(98.28583013)")
 st.write("\n\n\n")
 def load_data():
     if nitrogen_val and potassium_val and phosphorus_val and temp_val and humi_val and ph_val and rain_val:
-        a = list(int(nitrogen_val),int(potassium_val),int(phosphorus_val),float(temp_val),float(humi_val),float(ph_val),float(rain_val))
+        a = [int(nitrogen_val),int(potassium_val),int(phosphorus_val),float(temp_val),float(humi_val),float(ph_val),float(rain_val)]
         loaded = pickle.load(open("crop_predict.pkl","rb"))
         prediction = loaded.predict(np.array([a]))
         d = {20: 'Rice(Arici)', 11: 'Maize(Cholam)', 3: 'Chickpea(Kondakkadalai)', 9: 'Kidneybeans(Rajma Sundal)', 18: 'Pigeonpeas(Thuvaram Parupu)', 13: 'Mothbeans(Nari Payir)', 14: 'Mungbean(Pasi Payir)', 2: 'Blackgram(Ulunthu)',
