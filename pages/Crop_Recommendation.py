@@ -22,7 +22,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-st.markdown("<h1 class='tit'>Crop Recommendation</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='tit'>Crop ReCommendation</h1>", unsafe_allow_html=True)
 
 def img_dis(im_name,tit):
         st.markdown(f"<h1 class='tit'>{tit}</h1>", unsafe_allow_html=True)
