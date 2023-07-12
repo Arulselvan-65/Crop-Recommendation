@@ -12,7 +12,6 @@ hide = """
          </style>
          """
 st.markdown(hide,unsafe_allow_html=True)
-img = Image.open("farm.jpg")
 st.write("\n\n\n\n")
 st.write("\n\n\n\n")
 
