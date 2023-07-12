@@ -21,4 +21,7 @@ display: none;
 .css-1pesibo{
 color: white;
 }
-
+button:not(:disabled) {
+    color: white;
+    cursor: pointer;
+}
