@@ -4,6 +4,7 @@ from PIL import Image
 import altair as at
 import csv
 from plyer import gps
+from kivy.clock import mainthread
 st.set_page_config(layout="wide")
 hide = """
          <style>
@@ -42,7 +43,7 @@ st.markdown(
 )
 lat1 = " "
 lon1 = " "
-@kivy.clock.mainthread
+@mainthread
 def on_location (self, **kwargs):
     global lat1
     global lon1
