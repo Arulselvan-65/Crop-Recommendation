@@ -13,13 +13,13 @@ hide = """
          </style>
          """
 @st.cache_data
-def filter_crop(csv_file, fr_yr, to_yr, dist, crp_lst):
+def filter_crop(csv_file, fr_yr, to_yr, dist, crp_lst,sea):
     crop_list = crp_lst
     filtered = []
     with open(csv_file, 'r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            if fr_yr <= row['year'] <= to_yr and row['Dis'] == dist and row['crop'] in crop_list:
+            if fr_yr <= row['year'] <= to_yr and row['Dis'] == dist and row['crop'] in crop_list and row['sea'] == sea:
                 filtered.append((row['year'], float(row['prod']), row['crop']))
     return filtered
 @st.cache_data
@@ -97,7 +97,7 @@ else:
                 st.error("Starting Year should be less than Ending Year")
         else:
             btn_ph.button("Getting data..")
-            filtered_data = filter_crop("final_data3.csv", from_year, to_year, dis_val, crop_types)
+            filtered_data = filter_crop("final_data3.csv", from_year, to_year, dis_val, crop_types,season_option)
             if filtered_data:
                 years, prod, crops = zip(*filtered_data)
                 d = {'Year': list(map(str, years)),
