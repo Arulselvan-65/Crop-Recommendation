@@ -44,6 +44,8 @@ lat1 = " "
 lon1 = " "
 @kivy.clock.mainthread
 def on_location (self, **kwargs):
+    global lat1
+    global lon1
     for k, v in kwargs.items ():
         if k == "speed":
             break
