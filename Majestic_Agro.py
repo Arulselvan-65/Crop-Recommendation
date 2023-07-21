@@ -3,6 +3,7 @@ import streamlit as st
 from PIL import Image
 import altair as at
 import csv
+from plyer import gps
 st.set_page_config(layout="wide")
 hide = """
          <style>
