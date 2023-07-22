@@ -32,8 +32,8 @@ def img_dis(im_name,tit):
 
 shc_btn = st.button("Get Soil Health Card")
 if shc_btn:
+    webbrowser.open("https://soilhealth.dac.gov.in/")
     st.write("hi")
-    webbrowser.open ("https://soilhealth.dac.gov.in/")
 nitrogen_val = st.text_input("Nitrogen Content", placeholder="Eg(72)")
 st.write("\n\n\n")
 phosphorus_val = st.text_input("Phosphorus Content", placeholder="Eg(65)")
