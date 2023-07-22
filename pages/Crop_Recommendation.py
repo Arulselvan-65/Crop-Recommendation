@@ -30,7 +30,9 @@ def img_dis(im_name,tit):
         st.markdown(f"<h1 class='tit'>{tit}</h1>", unsafe_allow_html=True)
         st.image(im_name,use_column_width="always")
 
-
+shc_btn = st.button("Get Soil Health Card")
+if shc_btn:
+    webbrowser.open ("https://soilhealth.dac.gov.in/")
 nitrogen_val = st.text_input("Nitrogen Content", placeholder="Eg(72)")
 st.write("\n\n\n")
 phosphorus_val = st.text_input("Phosphorus Content", placeholder="Eg(65)")
