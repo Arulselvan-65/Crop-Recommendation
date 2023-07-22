@@ -101,6 +101,7 @@ star==0.1.2
 starlette==0.19.1
 streamlit==1.23.1
 streamlit-option-menu==0.3.6
+scikit-learn==1.2.2
 svg.path==6.2
 tenacity==8.2.2
 termcolor==2.2.0
