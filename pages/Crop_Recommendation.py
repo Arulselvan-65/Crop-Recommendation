@@ -1,5 +1,6 @@
 import random
-import webbrowser
+import streamlit.components.v1 as components
+
 import streamlit as st
 import pickle
 import numpy as np
@@ -32,8 +33,7 @@ def img_dis(im_name,tit):
 
 shc_btn = st.button("Get Soil Health Card")
 if shc_btn:
-    webbrowser.open("https://soilhealth.dac.gov.in/")
-    st.write("hi")
+    components.iframe("https://soilhealth.dac.gov.in/")
 nitrogen_val = st.text_input("Nitrogen Content", placeholder="Eg(72)")
 st.write("\n\n\n")
 phosphorus_val = st.text_input("Phosphorus Content", placeholder="Eg(65)")
