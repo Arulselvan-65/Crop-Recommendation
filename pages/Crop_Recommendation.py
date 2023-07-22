@@ -141,7 +141,7 @@ def load_data():
                                             img = Image.open("cotton.jpg")
                                             img_dis(img,pred)
                                         elif prediction[0] == 8:
-                                            img = Image.open("jute.jpg")
+                                            img = Image.open("jute.png")
                                             img_dis(img,pred)
                                         elif prediction[0] == 5:
                                             img = Image.open("coffee.jpg")
