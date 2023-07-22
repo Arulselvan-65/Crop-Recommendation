@@ -33,7 +33,7 @@ def img_dis(im_name,tit):
 
 #shc_btn = st.button("Get Soil Health Card")
 #if shc_btn:
-components.iframe("https://soilhealth.dac.gov.in/")
+components.iframe("https://soilhealth.dac.gov.in/home")
 nitrogen_val = st.text_input("Nitrogen Content", placeholder="Eg(72)")
 st.write("\n\n\n")
 phosphorus_val = st.text_input("Phosphorus Content", placeholder="Eg(65)")
