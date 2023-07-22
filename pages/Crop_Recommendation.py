@@ -33,7 +33,7 @@ def img_dis(im_name,tit):
 
 #shc_btn = st.button("Get Soil Health Card")
 #if shc_btn:
-st.markdown('<a href="Get Soil Health Card" target="https://soilhealth.dac.gov.in/home">...</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://soilhealth.dac.gov.in/home" target="_blank">Get Soil Health Card</a>', unsafe_allow_html=True)
 
 nitrogen_val = st.text_input("Nitrogen Content", placeholder="Eg(72)")
 st.write("\n\n\n")
